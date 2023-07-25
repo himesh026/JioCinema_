@@ -1,0 +1,288 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color:#fff ;
+    overflow: hidden;
+}
+
+.nav-bar{
+    height: 5rem;
+    /* width: 100%; */
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3rem;
+    /* background-color: black; */
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    /* background-color: rgb(107, 107, 107); */
+    /* box-sizing: border-box; */
+    overflow: auto;
+    height: 100vh;
+}
+
+.brand-name{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    /* line-height: 1.2; */
+    margin-left: 0.5rem;
+    cursor: pointer;
+
+
+}
+.jc-logo{
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+.Subscribe{
+    border-radius: 34px;
+    border: 2px solid rgb(193, 163, 98);
+    color: rgb(193, 163, 98);
+    height: 1.875rem;
+    width: 5.7rem;
+    font-weight: 600;
+    background-color: black;
+    font-size: 0.75rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+
+}
+.forU{
+    width: 4.5rem;
+    height: 2.675rem;
+    /* font-size: ; */
+    font-weight: 600;
+    color: #fff;
+    background-color: black;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 48px;
+    cursor: pointer;
+    margin-left: 1rem;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-left: 2rem;
+
+
+}
+.faltu{
+    height: 4.75rem;
+    width: 27.1rem ;
+    margin-left: 1rem;
+}
+.search{
+    width: 12.5rem;
+    height: 2.72rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: black;
+    font-weight: 400;
+    color: #fff;
+    cursor: text;
+    /* display: inline-flex; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+    margin-right: 0.75rem;
+
+}
+.search-input{
+    background-color: black;
+    border: 0px;
+    width: 9.6875rem;
+    height: 1.4375rem;
+    /* margin-left: 1rem; */
+    color: #fff;
+    outline: none;
+    padding: 8px;
+    font-weight: 500;
+    
+
+}
+.mic-icon{
+    cursor: pointer;
+}
+.search-icon{
+    font-size: 1.7625rem;
+    background-color: black;
+    opacity: 0;
+    display: none;
+    cursor: default;
+    
+
+}
+@media(max-width:1000px){
+    .search{
+        display: none;
+    }
+    .search-icon{
+        opacity: 1;
+        display:contents ;
+
+    }
+
+
+}
+
+.profile-avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.75rem;
+    cursor: pointer;
+
+}
+@media(max-width:900px){
+    .hide{
+        display: none;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    /* overflow: auto; */
+    
+}
+
+.heading{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.cards-list{
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding-left: 1.5rem;
+    overflow: visible;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    
+    
+}
+.cards-list img{
+    display: inline-block;
+    flex-wrap: wrap;
+    padding-right: 0.625rem;
+
+    
+}
+.trending{
+    width: 39.875rem;
+    height: 22.43rem; 
+
+
+    /* aspect-ratio: 16 / 9;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0px;
+    object-fit: cover;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* width: 100%; */
+    /* transition: opacity 400ms ease 0ms; */ 
+
+}
+
+.film-image{
+    width: 12.875rem;
+    height: 17.2rem;
+    border-radius: 10px;
+}
+.sport-card {
+    height: 9.5rem;
+    width: 9.5rem;
+    background-color: rgb(78, 77, 77);
+    border-radius: 10px;
+
+    margin-left: 0.625rem;
+
+}
+.trending,.film-image,.sport-card{
+    opacity: 0.9;
+    transition: opacity 400ms ease 0;
+}
+.trending:hover,.film-image:hover,.sport-card:hover{
+    opacity:1;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    background-color:#121212;
+    z-index: 11;
+}
+
+.left-footer{
+    display: flex;
+    gap: 4rem;
+}
+div h5{
+    opacity: 0.8;
+}
+
+.right-footer{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footspan{
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.footer-icon{
+    font-size: 1.75rem;
+    margin-left: 0.25rem;
+}
+.rleft{
+    display: flex;
+    flex-direction: column;
+}
+.rright{
+    display: flex;
+    flex-direction: column;
+    
+}
+.storeimg{
+    height: 4rem;
+    width: 6rem;
+}
+
+.last-footer{
+    
+    bottom: 0;
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    z-index: 8;
+}
+.last-footer-img{
+    height: 3rem;
+    width: 3rem;
+}
